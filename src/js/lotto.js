@@ -11,6 +11,7 @@ export const handleSubmitPrice = (e) => {
     return;
   }
   handleHidden();
+  document.querySelector(".total-purchased").innerHTML = priceValue / 1000;
 };
 
 export const validateInput = (data) => {
